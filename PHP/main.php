@@ -36,7 +36,6 @@
 
     //------------------------------------------------------CADASTRO--------------------------------------------------------//    
 
-
     //------------------------------------------------------CONSULTA--------------------------------------------------------// 
     $select = new Consultar();//permissao para acessar os metodos da classe consultar
     
@@ -53,15 +52,17 @@
     echo $select->consultarTudoLivro($conexao, "livro");
 
 
+    echo "<br><br> ==== Compra Efetuada ====";
+    echo "<br> Livro                   : Aristotéles - A Política
+               Cliente                 : Gustavo Laurindo Dos Santos
+               Valor                   : R$15,00
+               Remetente               : Livraria do LauLau
+               Endereço a ser entregue : Rua da independência, 481";
 
 
-    //$atu = new Atualizar();//permissao para acessar os metodos da classe consultar
-    
+    //$atu = new Atualizar();//permissao para acessar os metodos da classe consultar.
     //echo $atu->atualizar($conexao, "nome", "maria", 3, "cliente");
-
-
     //$del = new Deletar();//permissao para acessar os metodos da classe deletar
-    
     //echo $del->deletarIndividual($conexao,"cliente", 35);
 
     
